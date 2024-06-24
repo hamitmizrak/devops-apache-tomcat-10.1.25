@@ -67,11 +67,44 @@
          AJP  Connector: /docs/config/ajp.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector port="8080" protocol="HTTP/1.1"
+    <!-- 
+    0-1023
+    1024-49151
+    49152-65535
+    -->
+    <Connector port="1111" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443"
                maxParameterCount="1000"
+               maxThreads="200"
+               minSpareThreads="10"
+               maxSpareThreads="50"
+               acceptCount="100"
+               compressableMimeType="text/html,text/xml,text/plain"
+               secure="false"
+               scheme="https"
                />
+<!-- 
+port="1111" => dinleyici port
+protocol="HTTP/1.1" => HTTP/1.1 bu protokolü dinleyerek istekleri işleyecektir
+connectionTimeout="20000": 20 saniye istemciden gelen bir bağlantısının en fazla ne kadar sürede açık olacağını belirtir.
+redirectPort="8443" => Güvenli olmayan HTTP isteğini güvenli olan HTTPS yönlendirme 
+maxParameterCount="1000" => Dos(Denial Of Service) Http isteğinde maksimumm parametre saysıdır. Genellikle 10000 yazılır. 
+Ancak 1000 olduğu zaman en fazla 100 tane isteiği işleyebilirim
+maxThreads="200" => Aynı anda işlenebilecek maksimum iş parçacığı sayısını belirtir.
+minSpareThreads="10" => İş parçağı(thread) havuzunda tutulacak minumum yedek iş parçacığını temsil eder
+maxSpareThreads="50" => İş parçağı(thread) havuzunda tutulacak maksimum yedek iş parçacığını temsil eder
+acceptCount="100" => Maksimum bağlantı sayısını belirtir. Yani buradaki sayı aşıldığında tomcat yeni bağlantılarını redded
+compressableMimeType="text/html,text/xml,text/plain" => Mime türlerimi belirledik
+secure="false": Güvenli bir bağlantı HTTPS kullanmayacağını
+scheme="http" => Kullanılacak şemayı gösterdim
+
+
+-->
+
+
+
+
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
