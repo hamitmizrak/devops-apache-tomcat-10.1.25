@@ -496,3 +496,369 @@
 24-Jun-2024 23:00:58.409 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 24-Jun-2024 23:00:58.734 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1415] milliseconds
 24-Jun-2024 23:02:38.507 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/C:/Apache%20Tomcat/apache-tomcat-10.1.25-windows-x64/conf/tomcat-users.xml]
+24-Jun-2024 23:03:48.592 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/C:/Apache%20Tomcat/apache-tomcat-10.1.25-windows-x64/conf/tomcat-users.xml]
+24-Jun-2024 23:07:09.111 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jun-2024 23:07:09.112 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jun-2024 23:07:09.669 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jun-2024 23:07:09.693 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jun-2024 23:07:09.701 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Jun-2024 23:07:11.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.25
+24-Jun-2024 23:07:11.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 14 2024 19:31:59 UTC
+24-Jun-2024 23:07:11.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.25.0
+24-Jun-2024 23:07:11.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jun-2024 23:07:11.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jun-2024 23:07:11.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jun-2024 23:07:11.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11
+24-Jun-2024 23:07:11.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+9-LTS-219
+24-Jun-2024 23:07:11.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jun-2024 23:07:11.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:07:11.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:07:11.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\conf\logging.properties
+24-Jun-2024 23:07:11.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jun-2024 23:07:11.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jun-2024 23:07:11.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jun-2024 23:07:11.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jun-2024 23:07:11.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jun-2024 23:07:11.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jun-2024 23:07:11.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jun-2024 23:07:11.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jun-2024 23:07:11.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:07:11.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:07:11.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\temp
+24-Jun-2024 23:07:11.559 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+24-Jun-2024 23:07:11.567 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+24-Jun-2024 23:07:11.812 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:07:11.842 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [485] milliseconds
+24-Jun-2024 23:07:11.907 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jun-2024 23:07:11.907 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.25]
+24-Jun-2024 23:07:11.921 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+24-Jun-2024 23:07:12.553 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [315] milliseconds.
+24-Jun-2024 23:07:12.580 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [659] ms
+24-Jun-2024 23:07:12.580 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+24-Jun-2024 23:07:12.853 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [273] ms
+24-Jun-2024 23:07:12.853 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+24-Jun-2024 23:07:12.885 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [31] ms
+24-Jun-2024 23:07:12.885 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+24-Jun-2024 23:07:12.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [33] ms
+24-Jun-2024 23:07:12.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+24-Jun-2024 23:07:12.936 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [18] ms
+24-Jun-2024 23:07:12.944 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:07:13.244 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1401] milliseconds
+24-Jun-2024 23:21:18.296 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jun-2024 23:21:18.297 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:21:18.869 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jun-2024 23:21:18.888 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:21:18.905 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:21:20.879 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [maxSpareThreads] to [50]
+24-Jun-2024 23:21:20.883 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [compressableMimeType] to [text/html,text/xml,text/plain]
+24-Jun-2024 23:21:20.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.25
+24-Jun-2024 23:21:20.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 14 2024 19:31:59 UTC
+24-Jun-2024 23:21:20.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.25.0
+24-Jun-2024 23:21:20.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jun-2024 23:21:20.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jun-2024 23:21:20.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jun-2024 23:21:20.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11
+24-Jun-2024 23:21:20.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+9-LTS-219
+24-Jun-2024 23:21:20.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jun-2024 23:21:20.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:21:20.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:21:20.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\conf\logging.properties
+24-Jun-2024 23:21:20.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jun-2024 23:21:20.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jun-2024 23:21:20.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jun-2024 23:21:20.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jun-2024 23:21:20.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jun-2024 23:21:20.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jun-2024 23:21:20.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jun-2024 23:21:20.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jun-2024 23:21:20.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:21:20.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:21:20.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\temp
+24-Jun-2024 23:21:20.937 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+24-Jun-2024 23:21:20.942 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+24-Jun-2024 23:21:21.190 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:21:21.215 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [474] milliseconds
+24-Jun-2024 23:21:21.276 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jun-2024 23:21:21.276 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.25]
+24-Jun-2024 23:21:21.290 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+24-Jun-2024 23:21:21.962 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [339] milliseconds.
+24-Jun-2024 23:21:21.994 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [704] ms
+24-Jun-2024 23:21:21.994 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+24-Jun-2024 23:21:22.262 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [267] ms
+24-Jun-2024 23:21:22.262 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+24-Jun-2024 23:21:22.293 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [31] ms
+24-Jun-2024 23:21:22.293 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+24-Jun-2024 23:21:22.329 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [36] ms
+24-Jun-2024 23:21:22.329 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+24-Jun-2024 23:21:22.354 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [24] ms
+24-Jun-2024 23:21:22.364 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:21:22.681 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1465] milliseconds
+24-Jun-2024 23:22:08.522 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jun-2024 23:22:08.523 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:22:09.109 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jun-2024 23:22:09.132 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:22:09.142 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:22:10.834 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [maxSpareThreads] to [50]
+24-Jun-2024 23:22:10.838 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [compressableMimeType] to [text/html,text/xml,text/plain]
+24-Jun-2024 23:22:10.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.25
+24-Jun-2024 23:22:10.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 14 2024 19:31:59 UTC
+24-Jun-2024 23:22:10.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.25.0
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+9-LTS-219
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:22:10.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:22:10.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\conf\logging.properties
+24-Jun-2024 23:22:10.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jun-2024 23:22:10.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jun-2024 23:22:10.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jun-2024 23:22:10.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jun-2024 23:22:10.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jun-2024 23:22:10.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jun-2024 23:22:10.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jun-2024 23:22:10.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jun-2024 23:22:10.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:22:10.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:22:10.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\temp
+24-Jun-2024 23:22:10.904 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+24-Jun-2024 23:22:10.910 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+24-Jun-2024 23:22:11.184 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:22:11.210 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [527] milliseconds
+24-Jun-2024 23:22:11.264 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jun-2024 23:22:11.264 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.25]
+24-Jun-2024 23:22:11.278 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+24-Jun-2024 23:22:11.905 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [319] milliseconds.
+24-Jun-2024 23:22:11.937 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [659] ms
+24-Jun-2024 23:22:11.939 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+24-Jun-2024 23:22:12.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [296] ms
+24-Jun-2024 23:22:12.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+24-Jun-2024 23:22:12.279 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [43] ms
+24-Jun-2024 23:22:12.279 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+24-Jun-2024 23:22:12.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [46] ms
+24-Jun-2024 23:22:12.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+24-Jun-2024 23:22:12.362 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [36] ms
+24-Jun-2024 23:22:12.372 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:22:12.744 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1534] milliseconds
+24-Jun-2024 23:23:04.084 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jun-2024 23:23:04.084 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:04.623 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jun-2024 23:23:04.636 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:04.648 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:06.292 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [maxSpareThreads] to [50]
+24-Jun-2024 23:23:06.299 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [compressableMimeType] to [text/html,text/xml,text/plain]
+24-Jun-2024 23:23:06.300 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [clientAuth] to [false]
+24-Jun-2024 23:23:06.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.25
+24-Jun-2024 23:23:06.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 14 2024 19:31:59 UTC
+24-Jun-2024 23:23:06.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.25.0
+24-Jun-2024 23:23:06.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jun-2024 23:23:06.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jun-2024 23:23:06.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jun-2024 23:23:06.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11
+24-Jun-2024 23:23:06.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+9-LTS-219
+24-Jun-2024 23:23:06.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jun-2024 23:23:06.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:06.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:06.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\conf\logging.properties
+24-Jun-2024 23:23:06.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jun-2024 23:23:06.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:06.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\temp
+24-Jun-2024 23:23:06.344 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+24-Jun-2024 23:23:06.348 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+24-Jun-2024 23:23:06.574 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:06.599 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [458] milliseconds
+24-Jun-2024 23:23:06.641 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jun-2024 23:23:06.641 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.25]
+24-Jun-2024 23:23:06.650 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+24-Jun-2024 23:23:07.204 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [293] milliseconds.
+24-Jun-2024 23:23:07.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [594] ms
+24-Jun-2024 23:23:07.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+24-Jun-2024 23:23:07.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [387] ms
+24-Jun-2024 23:23:07.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+24-Jun-2024 23:23:07.663 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [32] ms
+24-Jun-2024 23:23:07.663 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+24-Jun-2024 23:23:07.687 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [24] ms
+24-Jun-2024 23:23:07.688 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+24-Jun-2024 23:23:07.704 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [16] ms
+24-Jun-2024 23:23:07.711 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:08.008 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1415] milliseconds
+24-Jun-2024 23:23:28.021 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jun-2024 23:23:28.021 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:28.568 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jun-2024 23:23:28.591 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:28.601 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:30.488 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [maxSpareThreads] to [50]
+24-Jun-2024 23:23:30.492 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [compressableMimeType] to [text/html,text/xml,text/plain]
+24-Jun-2024 23:23:30.492 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [clientAuth] to [true]
+24-Jun-2024 23:23:30.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.25
+24-Jun-2024 23:23:30.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 14 2024 19:31:59 UTC
+24-Jun-2024 23:23:30.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.25.0
+24-Jun-2024 23:23:30.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jun-2024 23:23:30.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jun-2024 23:23:30.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jun-2024 23:23:30.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11
+24-Jun-2024 23:23:30.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+9-LTS-219
+24-Jun-2024 23:23:30.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jun-2024 23:23:30.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:30.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:30.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\conf\logging.properties
+24-Jun-2024 23:23:30.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jun-2024 23:23:30.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jun-2024 23:23:30.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jun-2024 23:23:30.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jun-2024 23:23:30.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jun-2024 23:23:30.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jun-2024 23:23:30.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jun-2024 23:23:30.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jun-2024 23:23:30.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:30.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+24-Jun-2024 23:23:30.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\temp
+24-Jun-2024 23:23:30.542 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+24-Jun-2024 23:23:30.547 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+24-Jun-2024 23:23:30.753 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:30.781 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [424] milliseconds
+24-Jun-2024 23:23:30.822 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jun-2024 23:23:30.822 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.25]
+24-Jun-2024 23:23:30.832 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+24-Jun-2024 23:23:31.382 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [285] milliseconds.
+24-Jun-2024 23:23:31.403 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [571] ms
+24-Jun-2024 23:23:31.409 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+24-Jun-2024 23:23:31.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [277] ms
+24-Jun-2024 23:23:31.687 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+24-Jun-2024 23:23:31.724 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [37] ms
+24-Jun-2024 23:23:31.725 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+24-Jun-2024 23:23:31.755 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [30] ms
+24-Jun-2024 23:23:31.755 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+24-Jun-2024 23:23:31.779 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [24] ms
+24-Jun-2024 23:23:31.783 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-1111"]
+24-Jun-2024 23:23:32.113 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1332] milliseconds
+24-Jun-2024 23:25:21.966 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:25:21.968 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:25:22.018 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:25:22.019 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:25:22.020 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:25:22.204 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:25:22.205 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:25:22.205 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:25:22.239 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:25:22.240 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:25:22.240 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:25:22.295 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:25:22.295 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:25:22.295 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:25:22.326 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+24-Jun-2024 23:26:42.422 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:26:42.422 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:26:42.454 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:26:42.455 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:26:42.455 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:26:42.607 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:26:42.608 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:26:42.608 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:26:42.625 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:26:42.626 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:26:42.626 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:26:42.645 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:26:42.646 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:26:42.646 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:26:42.661 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+24-Jun-2024 23:28:02.757 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:28:02.757 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:28:02.772 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:28:02.777 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:28:02.777 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:28:02.901 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:28:02.901 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:28:02.901 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:28:02.916 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:28:02.916 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:28:02.916 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:28:02.936 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:28:02.936 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:28:02.936 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:28:02.953 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+24-Jun-2024 23:28:32.987 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:28:32.987 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:28:33.000 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:28:33.000 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:28:33.000 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:28:33.120 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:28:33.121 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:28:33.121 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:28:33.134 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:28:33.134 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:28:33.134 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:28:33.151 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:28:33.151 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:28:33.153 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:28:33.165 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+24-Jun-2024 23:28:43.178 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:28:43.178 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:28:43.196 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:28:43.196 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:28:43.196 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:28:43.313 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:28:43.313 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:28:43.313 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:28:43.329 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:28:43.329 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:28:43.329 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:28:43.345 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:28:43.345 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:28:43.345 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:28:43.355 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+24-Jun-2024 23:28:53.361 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:28:53.361 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:28:53.377 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:28:53.377 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:28:53.377 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:28:53.509 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:28:53.510 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:28:53.511 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:28:53.521 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:28:53.521 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:28:53.521 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:28:53.534 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:28:53.541 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:28:53.541 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:28:53.552 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+24-Jun-2024 23:29:13.583 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:29:13.583 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:29:13.599 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:29:13.599 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:29:13.599 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:29:13.708 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:29:13.708 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:29:13.708 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:29:13.726 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:29:13.726 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:29:13.726 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:29:13.741 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:29:13.741 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:29:13.741 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:29:13.758 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
+24-Jun-2024 23:29:33.778 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context []
+24-Jun-2024 23:29:33.779 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+24-Jun-2024 23:29:33.797 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+24-Jun-2024 23:29:33.798 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/examples]
+24-Jun-2024 23:29:33.798 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] has started
+24-Jun-2024 23:29:33.912 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/examples] is completed
+24-Jun-2024 23:29:33.913 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/host-manager]
+24-Jun-2024 23:29:33.913 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] has started
+24-Jun-2024 23:29:33.924 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/host-manager] is completed
+24-Jun-2024 23:29:33.925 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/manager]
+24-Jun-2024 23:29:33.925 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] has started
+24-Jun-2024 23:29:33.938 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/manager] is completed
+24-Jun-2024 23:29:33.938 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/docs]
+24-Jun-2024 23:29:33.938 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] has started
+24-Jun-2024 23:29:33.946 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/docs] is completed
