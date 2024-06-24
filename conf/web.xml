@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Licensed to the Apache Software Foundation (ASF) under one or more
-  contributor license agreements.  See the NOTICE file distributed with
-  this work for additional information regarding copyright ownership.
-  The ASF licenses this file to You under the Apache License, Version 2.0
-  (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
 
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
--->
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
                       https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
   version="6.0">
+
+   <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>com.example.FileUploadServlet</servlet-class>
+        <multipart-config>
+            <location>/tmp</location>
+            <max-file-size>10485760</max-file-size> <!--1024*1024*10= 10 MB -->
+            <max-request-size>52428800</max-request-size> <!-- 1024*1024*50=50 MB -->
+            <file-size-threshold>1048576</file-size-threshold> <!-- 1 MB -->
+        </multipart-config>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+<!--
+- **`location`**: Geçici dosyaların depolandığı dizini belirtir. Varsayılan olarak, JVM'nin geçici dizini kullanılır.
+- **`fileSizeThreshold`**: Bellekte tutulacak dosyaların maksimum boyutunu belirtir. Bu boyutu aşan dosyalar disk üzerine yazılır.
+- **`maxFileSize`**: Yüklenebilecek tek bir dosyanın maksimum boyutunu belirtir. Varsayılan değeri sınırsızdır.
+- **`maxRequestSize`**: Tek bir istekte yüklenebilecek toplam dosya boyutunu belirtir. Varsayılan değeri sınırsızdır.
+-->
+
 
   <!-- ======================== Introduction ============================== -->
   <!-- This document defines default values for *all* web applications      -->
@@ -33,6 +41,7 @@
 
 
   <!-- Set the default request and response character encodings to UTF-8.   -->
+  <!-- Türkçe karakter Sorunu olması-->
   <request-character-encoding>UTF-8</request-character-encoding>
   <response-character-encoding>UTF-8</response-character-encoding>
 
