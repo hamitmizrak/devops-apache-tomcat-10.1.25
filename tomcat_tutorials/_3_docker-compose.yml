@@ -33,7 +33,8 @@ services:
       - tomcat-conf:/usr/local/tomcat/conf
       - ./tomcat/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
       - ./tomcat/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
- 
+      - ./tomcat/server.xml:/usr/local/tomcat/conf/server.xml
+      - ./tomcat/web.xml:/usr/local/tomcat/conf/web.xml
 # Volume
 volumes:
   tomcat-logs:

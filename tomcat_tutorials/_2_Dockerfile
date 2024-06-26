@@ -22,6 +22,10 @@ VOLUME /tmp
 # Tomcat konfigürasyon dosyasını kopyala
 COPY ./tomcat/tomcat-users.xml /usr/local/tomcat/conf/
 COPY ./tomcat/context.xml /usr/local/tomcat/webapps/manager/META-INF/
+COPY ./tomcat/server.xml /usr/local/tomcat/conf/
+COPY ./tomcat/web.xml /usr/local/tomcat/conf/
+
+
 
 # Tomcat War Added
 COPY ./tomcat/webapps/sample.war /usr/local/tomcat/webapps
