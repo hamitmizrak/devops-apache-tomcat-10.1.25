@@ -101,6 +101,8 @@ rem                   Example (all one line)
 rem                   set TITLE=Tomcat.Cluster#1.Server#1 [%DATE% %TIME%]
 rem ---------------------------------------------------------------------------
 
+
+
 setlocal
 
 rem Suppress Terminate batch job on CTRL+C
@@ -207,6 +209,9 @@ rem Register custom URL handlers
 rem Do this here so custom URL handles (specifically 'war:...') can be used in the security policy
 set "JAVA_OPTS=%JAVA_OPTS% -Djava.protocol.handler.pkgs=org.apache.catalina.webresources"
 
+
+CATALINA_OPTS="-Dcom.sun.management.jmxremote.port=7091 -Dcom.sun.management.jmxremote.rmi.port=7091 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=127.0.0.1 "
+
 if not "%CATALINA_LOGGING_CONFIG%" == "" goto noJuliConfig
 set CATALINA_LOGGING_CONFIG=-Dnop
 if not exist "%CATALINA_BASE%\conf\logging.properties" goto noJuliConfig
@@ -216,6 +221,8 @@ set CATALINA_LOGGING_CONFIG=-Djava.util.logging.config.file="%CATALINA_BASE%\con
 if not "%LOGGING_MANAGER%" == "" goto noJuliManager
 set LOGGING_MANAGER=-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
 :noJuliManager
+
+
 
 rem Configure module start-up parameters
 set "JAVA_OPTS=%JAVA_OPTS% --add-opens=java.base/java.lang=ALL-UNNAMED"

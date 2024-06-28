@@ -6,6 +6,7 @@
                       https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
   version="6.0">
 
+<!-- File Upload -->
    <servlet>
         <servlet-name>FileUploadServlet</servlet-name>
         <servlet-class>com.example.FileUploadServlet</servlet-class>
@@ -4752,10 +4753,12 @@
   <!-- here, so be sure to include any of the default values that you wish  -->
   <!-- to use within your application.                                      -->
 
+<!-- Sayfa Açılırken Açılacak Türler -->
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.jspx</welcome-file>
     </welcome-file-list>
 
 </web-app>

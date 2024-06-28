@@ -19,7 +19,7 @@ services:
   apache_tomcat_web:
     container_name: my_tomcat2
     image: my_tomcat2
-    restart: on-failure 
+    restart: on-failure
     #build: ./
     #build: ./deneme
     build:
@@ -31,10 +31,44 @@ services:
       - tomcat-logs:/usr/local/tomcat/logs
       - tomcat-webapps:/usr/local/tomcat/webapps
       - tomcat-conf:/usr/local/tomcat/conf
-      - ./tomcat/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
-      - ./tomcat/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
-      - ./tomcat/server.xml:/usr/local/tomcat/conf/server.xml
-      - ./tomcat/web.xml:/usr/local/tomcat/conf/web.xml
+      - ./tomcat/conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+      - ./tomcat/conf/server.xml:/usr/local/tomcat/conf/server.xml
+      - ./tomcat/conf/web.xml:/usr/local/tomcat/conf/web.xml
+      - ./tomcat/webapps/manager/META-INF/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
+      - ./tomcat/bin/catalina.sh:/usr/local/tomcat/bin/catalina.sh
+    networks:
+      - tomcatnetwork
+
+  # Grafana
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000
+    networks:
+      - tomcatnetwork 
+
+  # Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - tomcatnetwork 
+
+  # Jmx
+  jmx-exporter:
+    image: sscaling/jmx-prometheus-exporter
+    ports:
+      - "9072:9072"
+    environment:
+      SERVICE_PORT: 9072
+    volumes:
+      - ./config.yml:/opt/jmx_exporter/config.yml
+    networks:
+      - tomcatnetwork   
+
 # Volume
 volumes:
   tomcat-logs:
@@ -43,6 +77,12 @@ volumes:
     driver: local
   tomcat-conf:
     driver: local
+
+# Networks
+networks:
+  tomcatnetwork:
+    name: tomcatnetwork
+    driver: bridge
 
 # ./Deploy1.sh
 # docker ps

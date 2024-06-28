@@ -300,6 +300,25 @@ JAVA_OPTS="$JAVA_OPTS --add-opens=java.base/java.util=ALL-UNNAMED"
 JAVA_OPTS="$JAVA_OPTS --add-opens=java.base/java.util.concurrent=ALL-UNNAMED"
 JAVA_OPTS="$JAVA_OPTS --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"
 
+# JVM Bellek islemleri
+# JAVA_OPTS=-Xms1024m -Xmx2048m
+# docker container top my_tomcat2 => bu komutla Değerli görelim
+# -XX:+UseParallelGC
+# -XX:+UseG1GC
+# -XX:+UseConcMarkSweepGC
+
+export JAVA_OPTS="-Xms1024m -Xmx2g \
+-XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=1g \
+-XX:+UseG1GC \
+ -Xlog:gc*:file=/usr/local/tomcat/logs/gc.log:time,uptime:filecount=10,filesize=100m"
+# -Xms1024m  => JVM'in başlangıçta ayıracağı heap bellek miktarını belirtir.
+# -Xmx2g -XX:+UseG1GC  => JVM'in kullanabileceği maksimum heap bellek miktarını belirtir. 
+# -XX:MetaspaceSize=256m => JVM'in başlangıçta ayıracağı Metaspace (sınıf meta verileri için kullanılan bellek alanı) miktarını belirtir.
+# -XX:MaxMetaspaceSize=1g => JVM'in kullanabileceği maksimum Metaspace boyutunu belirtir
+# -XX:+UseG1GC 
+# -Xlog:gc*:file=/usr/local/tomcat/logs/gc.log:time,uptime:filecount=10,filesize=100m"
+
+
 # ----- Execute The Requested Command -----------------------------------------
 
 # Bugzilla 37848: only output this if we have a TTY
