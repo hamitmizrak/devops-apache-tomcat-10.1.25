@@ -5263,3 +5263,248 @@
 03-Jul-2024 13:50:04.071 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 03-Jul-2024 13:50:04.084 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 03-Jul-2024 13:50:04.105 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+03-Jul-2024 13:51:20.840 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Executor] failed to set property [maxSpareThreads] to [50]
+03-Jul-2024 13:51:20.882 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [compressableMimeType] to [text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json,application/xml,application/xhtml+xml,application/rss+xml,application/atom+xml,text/markdown,application/x-www-form-urlencoded]
+03-Jul-2024 13:51:20.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.25
+03-Jul-2024 13:51:20.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 14 2024 19:31:59 UTC
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.25.0
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+9-LTS-219
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+03-Jul-2024 13:51:20.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Apache Tomcat/apache-tomcat-10.1.25-windows-x64/conf/logging.properties
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms1024m
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx2g
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:+UseG1GC
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:MetaspaceSize=256m
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:MaxMetaspaceSize=1g
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Apache Tomcat/apache-tomcat-10.1.25-windows-x64
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Apache Tomcat/apache-tomcat-10.1.25-windows-x64
+03-Jul-2024 13:51:20.917 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Apache Tomcat/apache-tomcat-10.1.25-windows-x64/temp
+03-Jul-2024 13:51:20.919 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+03-Jul-2024 13:51:20.923 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+03-Jul-2024 13:51:21.150 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+03-Jul-2024 13:51:21.176 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [437] milliseconds
+03-Jul-2024 13:51:21.219 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+03-Jul-2024 13:51:21.219 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.25]
+03-Jul-2024 13:51:21.231 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+03-Jul-2024 13:51:21.264 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 13:51:21.375 SEVERE [main] org.apache.tomcat.util.digester.Digester.startElement Begin event threw exception
+	java.lang.IllegalArgumentException: <session-config> element is limited to 1 occurrence
+		at org.apache.tomcat.util.descriptor.web.SetSessionConfig.begin(WebRuleSet.java:778)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1264)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:510)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1397)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2710)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment(ContextConfig.java:1675)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1227)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+03-Jul-2024 13:51:21.377 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Apache%20Tomcat/apache-tomcat-10.1.25-windows-x64/conf/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Apache%20Tomcat/apache-tomcat-10.1.25-windows-x64/conf/web.xml; lineNumber: 675; columnNumber: 21; Error at line [675] column [21]: [<session-config> element is limited to 1 occurrence]
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1953)
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1985)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1267)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:510)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1397)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2710)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment(ContextConfig.java:1675)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1227)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.lang.IllegalArgumentException: <session-config> element is limited to 1 occurrence
+		at org.apache.tomcat.util.descriptor.web.SetSessionConfig.begin(WebRuleSet.java:778)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1264)
+		... 57 more
+03-Jul-2024 13:51:21.380 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [675] column [21]
+03-Jul-2024 13:51:21.404 SEVERE [main] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+03-Jul-2024 13:51:21.442 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+03-Jul-2024 13:51:21.777 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [335] milliseconds.
+03-Jul-2024 13:51:21.778 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/docs] startup failed due to previous errors
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.catalina.loader.WebappClassLoaderBase (file:/C:/Apache%20Tomcat/apache-tomcat-10.1.25-windows-x64/lib/catalina.jar) to field java.io.ObjectStreamClass$Caches.localDescs
+WARNING: Please consider reporting this to the maintainers of org.apache.catalina.loader.WebappClassLoaderBase
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+03-Jul-2024 13:51:21.788 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [558] ms
+03-Jul-2024 13:51:21.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+03-Jul-2024 13:51:21.791 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 13:51:22.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [378] ms
+03-Jul-2024 13:51:22.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+03-Jul-2024 13:51:22.171 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 13:51:22.199 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [32] ms
+03-Jul-2024 13:51:22.199 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+03-Jul-2024 13:51:22.202 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 13:51:22.224 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [25] ms
+03-Jul-2024 13:51:22.225 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+03-Jul-2024 13:51:22.225 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 13:51:22.247 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [21] ms
+03-Jul-2024 13:51:22.254 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+03-Jul-2024 13:51:22.565 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1388] milliseconds
+03-Jul-2024 13:54:32.437 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/C:/Apache%20Tomcat/apache-tomcat-10.1.25-windows-x64/conf/tomcat-users.xml]
+03-Jul-2024 13:58:42.706 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample.war]
+03-Jul-2024 13:58:42.708 WARNING [Catalina-utility-2] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 13:58:42.775 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample.war] has finished in [69] ms
+03-Jul-2024 13:59:44.301 INFO [catalina-exec-5] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/sample]
+03-Jul-2024 14:00:36.798 INFO [catalina-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample.war]
+03-Jul-2024 14:00:36.801 WARNING [catalina-exec-2] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:00:36.833 INFO [catalina-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample.war] has finished in [35] ms
+03-Jul-2024 14:00:45.480 INFO [catalina-exec-15] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/sample]
+03-Jul-2024 14:02:00.803 INFO [catalina-exec-22] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\deneme##v1]
+03-Jul-2024 14:02:00.807 WARNING [catalina-exec-22] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:02:00.825 INFO [catalina-exec-22] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\deneme##v1] has finished in [22] ms
+03-Jul-2024 14:02:26.969 INFO [catalina-exec-20] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/deneme##v1]
+03-Jul-2024 14:03:12.319 INFO [catalina-exec-23] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\deneme##v1]
+03-Jul-2024 14:03:12.322 WARNING [catalina-exec-23] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:03:12.336 INFO [catalina-exec-23] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\deneme##v1] has finished in [17] ms
+03-Jul-2024 14:03:30.392 INFO [catalina-exec-29] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/deneme##v1]
+03-Jul-2024 14:03:47.663 INFO [catalina-exec-10] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample##v1]
+03-Jul-2024 14:03:47.665 WARNING [catalina-exec-10] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:03:47.677 INFO [catalina-exec-10] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample##v1] has finished in [14] ms
+03-Jul-2024 14:05:03.214 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+03-Jul-2024 14:05:03.220 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples]
+03-Jul-2024 14:05:03.224 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
+03-Jul-2024 14:05:03.232 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/sample##v1]
+03-Jul-2024 14:05:03.239 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+03-Jul-2024 14:05:03.246 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/docs]
+03-Jul-2024 14:05:03.248 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+03-Jul-2024 14:05:03.272 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [24] ms
+03-Jul-2024 14:05:03.272 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+03-Jul-2024 14:05:03.525 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [252] ms
+03-Jul-2024 14:05:03.525 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+03-Jul-2024 14:05:03.544 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [18] ms
+03-Jul-2024 14:05:03.544 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+03-Jul-2024 14:05:03.567 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [23] ms
+03-Jul-2024 14:05:03.567 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+03-Jul-2024 14:05:03.581 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [14] ms
+03-Jul-2024 14:05:03.582 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample##v1]
+03-Jul-2024 14:05:03.596 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample##v1] has finished in [14] ms
+03-Jul-2024 14:05:13.600 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+03-Jul-2024 14:05:13.604 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples]
+03-Jul-2024 14:05:13.608 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
+03-Jul-2024 14:05:13.611 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/sample##v1]
+03-Jul-2024 14:05:13.613 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+03-Jul-2024 14:05:13.616 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/docs]
+03-Jul-2024 14:05:13.617 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs]
+03-Jul-2024 14:05:13.620 WARNING [Catalina-utility-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:05:13.637 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\docs] has finished in [20] ms
+03-Jul-2024 14:05:13.637 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples]
+03-Jul-2024 14:05:13.639 WARNING [Catalina-utility-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:05:13.851 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\examples] has finished in [213] ms
+03-Jul-2024 14:05:13.851 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager]
+03-Jul-2024 14:05:13.854 WARNING [Catalina-utility-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:05:13.873 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\host-manager] has finished in [22] ms
+03-Jul-2024 14:05:13.873 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager]
+03-Jul-2024 14:05:13.876 WARNING [Catalina-utility-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:05:13.895 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\manager] has finished in [22] ms
+03-Jul-2024 14:05:13.895 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT]
+03-Jul-2024 14:05:13.897 WARNING [Catalina-utility-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:05:13.908 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\ROOT] has finished in [13] ms
+03-Jul-2024 14:05:13.908 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample##v1]
+03-Jul-2024 14:05:13.910 WARNING [Catalina-utility-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context/Resources] failed to set property [cacheTTL] to [60000]
+03-Jul-2024 14:05:13.924 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Apache Tomcat\apache-tomcat-10.1.25-windows-x64\webapps\sample##v1] has finished in [16] ms
