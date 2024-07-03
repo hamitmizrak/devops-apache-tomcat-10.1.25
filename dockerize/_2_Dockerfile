@@ -17,23 +17,25 @@ RUN echo "Version: $VERSION"
 RUN echo "Port:1111 $PORT"
 
 # Data Persist (Kalıcı Veri)
-VOLUME /tmp
+VOLUME /tmp 
 
-# Tomcat Configuration Dosyalarını docker containerda kullan.
-COPY ./tomcat/conf/tomcat-users.xml /usr/local/tomcat/conf
-COPY ./tomcat/conf/server.xml /usr/local/tomcat/conf
-COPY ./tomcat/conf/web.xml /usr/local/tomcat/conf
+# Tomcat konfigürasyon dosyasını kopyala
+# conf
+COPY ./tomcat/conf/tomcat-users.xml /usr/local/tomcat/conf/
+COPY ./tomcat/conf/server.xml /usr/local/tomcat/conf/
+COPY ./tomcat/conf/web.xml /usr/local/tomcat/conf/
 
-# Context 
+# Context
 COPY ./tomcat/conf/context.xml /usr/local/tomcat/conf
-COPY ./tomcat/webapps/manager/META-INF/context.xml /usr/local/tomcat/webapps/manager/META-INF
+COPY ./tomcat/webapps/manager/META-INF/context.xml /usr/local/tomcat/webapps/manager/META-INF/
 
-# Catalina
-COPY ./tomcat/bin/catalina.sh /usr/local/tomcat/bin
 
-# Tomcat Wat Added
+# catalina.sh
+COPY ./tomcat/bin/catalina.sh /usr/local/tomcat/bin/catalina.sh
+
+
+# Tomcat War Added
 COPY ./tomcat/webapps/sample.war /usr/local/tomcat/webapps
-
 
 
 # Set environment variables for non-interactive installs
@@ -64,7 +66,6 @@ EXPOSE 8080
 # Run Tomcat
 CMD ["catalina.sh", "run"]
 
-
 # HEALTHCHECK: Sağlık kontrolünü Eklesin
 # HEALTHCHECK: Bu container çalışıyor mu ?
 #--interval=30s : Sağlık kontrolünü her 30 saniye bir çalıştırsın
@@ -76,6 +77,7 @@ CMD ["catalina.sh", "run"]
 # Konteynar sağlıklı çalışıyor mu
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
  CMD wget --quiet --tries=1 --spider http://localhost:1111 exit 1
+
 
 ########################################################################
 ########################################################################
@@ -105,5 +107,3 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 # ./shutdown.sh
 
 # docker container start my_tomcat2
-
-

@@ -5,7 +5,8 @@
 # docker-compose -f _3_docker-compose.yml up 
 docker-compose -f _3_docker-compose.yml up -d
 
-winpty docker container exec -it my_tomcat2 bash
+# Container Image Bağlan
+winpty docker container  exec -it  my_tomcat2 bash
 
 #./deployment2.sh
 
@@ -26,10 +27,10 @@ winpty docker container exec -it my_tomcat2 bash
 # username: admin
 # password: admin
 
-# http://localhost:1111
-# http://localhost:2222
-# http://localhost:3333
-# http://localhost:4444
+# http://localhost:1111 Tomcat
+# http://localhost:3333 Grafana
+# http://localhost:4444 Prometheus
+# http://localhost:5555 JMX
 
 # curl http://localhost:1111
 # curl http://localhost:2222

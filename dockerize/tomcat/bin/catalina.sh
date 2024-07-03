@@ -304,9 +304,8 @@ JAVA_OPTS="$JAVA_OPTS --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"
 export JAVA_OPTS="-Xms1024m -Xmx2g \
 -XX:+UseG1GC \
 -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=1g \
--Xlog:gc*:file=/usr/local/tomcat/logs/gc.log:time,uptime:filecount=10,filesize=100m
 "
-#-Xlog:gc*:file=/usr/local/tomcat/logs/gc.log:time,uptime:filecount=10,filesize=100m
+#-Xlog:gc*:file=/usr/local/tomcat/logs/gc.log:time,uptime:filecount=10,filesize=100m"
 
 
 # -Xms1024m => JVM'in başlangıçta minumum ayıracağı Heap Bellek miktarıdır.

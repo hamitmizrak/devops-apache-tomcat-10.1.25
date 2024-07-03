@@ -1,32 +1,28 @@
 # docker-compose --version
 # docker-compose up
 # docker-compose up -d
-# docker-compose -f my_docker_compose.yml up
-# docker-compose -f apache_jdk_docker_compose.yml up
+# docker-compose -f _3_Docker_compose.yml up -d
+# docker-compose -f _3_Docker_compose.yml up
 # docker-compose down
 # docker-compose restart
 # docker-compose ps
 
-# restart: on-failure
-# restart: no => default olandır. Yani docker compose otomatik olarak restart yapsın
-# restart: unless-stopped => Konteynar durduğunda otomatik olarak yeniden başlasın
-# restart: always => Konteynar her zaman otomatik başlasın
-# restart: on-failure => konteryanar çökmesi halinde otomatik başlasın
+# restart: on-failure => Conteynar çökmesi halinde  Docker compose otomatik çalıştır.
+# restart: no         => Default olan. Docker compose otomatik başlasın.
+# restart: always     => Conteynar her zaman Docker compose otomatik başlasın.
+# restart:unless-stopped => Conteynar durduğu zaman Docker compose yeniden başlasın
 
-####################################################################
-
-# Version
 version: '3.8'
 
 # Services
 services:
-  # Tomcat
+   # Tomcat
   apache_tomcat_web:
     container_name: my_tomcat2
     image: my_tomcat2
-    restart: on-failure
-    #build: ./deneme/
+    restart: on-failure 
     #build: ./
+    #build: ./deneme
     build:
       context: .
       dockerfile: _2_Dockerfile
@@ -36,7 +32,7 @@ services:
       - tomcat-logs:/usr/local/tomcat/logs
       - tomcat-webapps:/usr/local/tomcat/webapps
       - tomcat-conf:/usr/local/tomcat/conf
-      - ./tomcat/conf/tomcat-users.xml:/usr/local/tomcat/conf/users-users.xml
+      - ./tomcat/conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
       - ./tomcat/conf/server.xml:/usr/local/tomcat/conf/server.xml
       - ./tomcat/conf/web.xml:/usr/local/tomcat/conf/web.xml
       - ./tomcat/conf/context.xml:/usr/local/tomcat/conf/context.xml
@@ -45,36 +41,50 @@ services:
     networks:
       - tomcatnetwork
 
+  # Jenkins
+  jenkins:
+    image: jenkins/jenkins:latest
+    container_name: jenkins_master
+    ports:
+      - "2222:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    environment:
+      JAVA_OPTS: "-Djenkins.install.runSetupWizard=false" # ilk kurulum sihirbazı devre dışı burakmak
+    networks:
+      - tomcatnetwork        
+  
   # Grafana
   grafana:
     image: grafana/grafana:latest
     ports:
-      - 2222:3000
+      - 3333:3000
     networks:
-      - tomcatnetwork
+      - tomcatnetwork   
 
-  # Prometheus
+# Prometheus
   prometheus:
     image: prom/prometheus:latest
     ports:
-      - 3333:9090
+      - 4444:9090
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     networks:
-      - tomcatnetwork
+      - tomcatnetwork   
 
-    # JMX
+  # Jmx
   jmx-exporter:
     image: sscaling/jmx-prometheus-exporter
     ports:
-      - "4444:9072"
+      - "5555:9072"
     environment:
       SERVICE_PORT: 9072
     volumes:
-      - ./config.yml:/opt/jmx_exporter/config.yml
+      - ./jmx/config.yml:/opt/jmx_exporter/config.yml
     networks:
-      - tomcatnetwork    
+      - tomcatnetwork
 
+  
 # Volume
 volumes:
   tomcat-logs:
@@ -83,59 +93,46 @@ volumes:
     driver: local
   tomcat-conf:
     driver: local
+  jenkins_home:
+    driver: local
 
 # Network
 networks:
   tomcatnetwork:
     name: tomcatnetwork
-    driver: bridge    
+    driver: bridge
+ 
+#####################################################################
+#####################################################################
+#####################################################################
+# ./deployment1.sh
 
-########################################################################
-########################################################################
-########################################################################
+# Jenkins => docker exec -it jenkins_master cat /var/jenkins_home/secrets/initialAdminPassword
 
-# local driver'ı, volume'u host makinenizin dosya sistemi üzerinde depolar. 
-# Bu, verilerinizi kalıcı hale getirmenin ve container'lar arasında paylaşmanın en yaygın ve basit yoludur. 
-# Docker volume'larını kullanarak, container'lar arasında veri paylaşabilir ve container silindiğinde bile verilerinizi koruyabilirsiniz.
 
-# ./deployment.sh
 # docker ps
 # winpty docker container  exec -it  my_tomcat2 bash
 # cd usr/local/tomcat/logs
 # cd usr/local/tomcat/webapps
 # rm -rf examples
 # ls -al
-
+# 
 # docker-compose down
-# docker volume ls 
-# docker volume inspect desktop_tomcat-logs
-# docker volume inspect tomcat-webapps
+# docker volume --help
+# docker volume ls
+# docker volume inspect <VOLUME_NAME>
+# docker volume rm <VOLUME_NAME>
 
-# docker-compose down
-# docker volume rm  tomcat-logs
-# docker volume ls 
 
-# docker volume inspect tomcat-logs
-# docker volume inspect tomcat-webapps
-
-# docker-compose down
-# docker volume rm  tomcat-logs
-
-# winpty docker run -it --rm \
-# -- name other_apache
-# -v desktop_tomcat-logs://usr/local/tomcat/logs  \
-# -v desktop_tomcat-webapps://usr/local/tomcat/webapps \
+# Yeni bir container oluştur ve o container terminaline bağlan
+# Bu container içinde önceden verdiğim volume ekle
+# winpty docker run -it --rm --name volume_container \
+# -v tomcat_tomcat-conf://usr/local/tomcat/conf \
+# -v tomcat_tomcat-logs://usr/local/tomcat/logs \
+# -v tomcat_tomcat-webapps://usr/local/tomcat/webapps \
 # my_tomcat2 bash
 
-# ls -al 
-# cd usr/local/tomcat/logs
-# ls -al 
-# cd usr/local/tomcat/webapps
-# Bu komut şunları yapar:
 
-# docker run: Yeni bir container çalıştırır.
-# -it: İnteraktif terminal modunda çalıştırır.
-# --rm: Container kapatıldığında otomatik olarak siler.
-# -v tomcat-logs:/data: tomcat-logs volume'unu container içindeki /data dizinine bağlar.
-# ubuntu: Ubuntu tabanlı bir container çalıştırır.
-# bash: Container içinde bash shell çalıştırır.
+
+
+
