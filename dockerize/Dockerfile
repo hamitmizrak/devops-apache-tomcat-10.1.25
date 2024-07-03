@@ -1,16 +1,3 @@
-# Dockerfile: Kendi image dosyalarımızı oluşturmak için
-# Dockerfile Çalıştırma
-# docker build -t image_name .
-
-# docker build -t my_tomcat2 .
-# docker build . => Image Adını yazmadan oluştur.
-
-# Eğer Dockerfile isminden farklı bir isim kullanırsanız (-f) yazmalısınız
-# docker build -t my_tomcat2  -f CustomDockerfileUbuntuDockerJDK .
-
-# docker ps 
-# docker run -d -p 1111:8080 --name tomcat-container my-tomcat-app
-
 
 # FROM: Çalıştıracağımız image gösteririr.
 # İmage olarak ubuntu:20.04 kullandım
@@ -30,7 +17,12 @@ RUN echo "Version: $VERSION"
 RUN echo "Port:1111 $PORT"
 
 # Data Persist (Kalıcı Veri)
-VOLUME /tmp 
+VOLUME /tmp
+
+# Tomcat Configuration Dosyalarını docker containerda kullan.
+COPY ./tomcat/conf/tomcat-users.xml /usr/local/tomcat/conf
+
+
 
 # Set environment variables for non-interactive installs
 # ENV DEBIAN_FRONTEND=noninteractive komutu, Debian tabanlı sistemlerde (bu durumda Ubuntu) paket yönetim sistemi olan apt-get ile 
@@ -72,3 +64,18 @@ CMD ["catalina.sh", "run"]
 # Konteynar sağlıklı çalışıyor mu
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
  CMD wget --quiet --tries=1 --spider http://localhost:1111 exit 1
+
+
+ # Dockerfile: Kendi image dosyalarımızı oluşturmak için
+# Dockerfile Çalıştırma
+# docker build -t image_name .
+
+# docker build -t my_tomcat2 .
+# docker build . => Image Adını yazmadan oluştur.
+
+# Eğer Dockerfile isminden farklı bir isim kullanırsanız (-f) yazmalısınız
+# docker build -t my_tomcat2  -f CustomDockerfileUbuntuDockerJDK .
+
+# docker ps 
+# docker run -d -p 1111:8080 --name tomcat-container my-tomcat-app
+

@@ -6,6 +6,7 @@
                       https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
   version="6.0">
 
+<!-- Bu tomcat için min,max yükleme ağırlıkları -->
    <servlet>
         <servlet-name>FileUploadServlet</servlet-name>
         <servlet-class>com.example.FileUploadServlet</servlet-class>
@@ -21,13 +22,45 @@
         <servlet-name>FileUploadServlet</servlet-name>
         <url-pattern>/upload</url-pattern>
     </servlet-mapping>
-<!--
-- **`location`**: Geçici dosyaların depolandığı dizini belirtir. Varsayılan olarak, JVM'nin geçici dizini kullanılır.
-- **`fileSizeThreshold`**: Bellekte tutulacak dosyaların maksimum boyutunu belirtir. Bu boyutu aşan dosyalar disk üzerine yazılır.
-- **`maxFileSize`**: Yüklenebilecek tek bir dosyanın maksimum boyutunu belirtir. Varsayılan değeri sınırsızdır.
-- **`maxRequestSize`**: Tek bir istekte yüklenebilecek toplam dosya boyutunu belirtir. Varsayılan değeri sınırsızdır.
--->
+    <!--
+    - **`location`**: Geçici dosyaların depolandığı dizini belirtir. Varsayılan olarak, JVM'nin geçici dizini kullanılır.
+    - **`fileSizeThreshold`**: Bellekte tutulacak dosyaların maksimum boyutunu belirtir. Bu boyutu aşan dosyalar disk üzerine yazılır.
+    - **`maxFileSize`**: Yüklenebilecek tek bir dosyanın maksimum boyutunu belirtir. Varsayılan değeri sınırsızdır.
+    - **`maxRequestSize`**: Tek bir istekte yüklenebilecek toplam dosya boyutunu belirtir. Varsayılan değeri sınırsızdır.
+    -->
 
+    <!-- Oturum zaman aşımı yapılandırılması -->
+    <session-config>
+        <!-- 
+        Oturum Zaman aşımı Süresi (Dakika) cinsinden  
+        Kullanıcı eğer 30 dakika boyunca herhangi bir işelm yapmazsa oturum sona erer.
+        -->
+        <session-timeout>30</session-timeout>
+
+        <!-- Cookie: Çerezleri -->
+        <cookier-config>
+            <name>MYSESSIONID</name><!-- Oturum çerez ismi -->
+            <domain>http://localhost:8080</domain> <!-- Çerezin geçerli olduğu alan -->
+            <path>/</path><!-- Çerezin geçerli olduğu yol -->
+            <http-only>true</http-only> <!-- Çerezin yalnızca HTTP üzerinden iletilmesi-->
+            <secure>true</secure> <!-- Çerezin yalnızca HTTPS üzerinden iletilmesi-->
+        </cookier-config>
+    </session-config>
+
+
+  <!-- Set the default request and response character encodings to UTF-8.   -->
+  <!-- Türkçe karakter Sorunu olması-->
+  <request-character-encoding>UTF-8</request-character-encoding>
+  <response-character-encoding>UTF-8</response-character-encoding>
+
+
+    <!-- Bu projede ana sayfa oalrak ilk  index.html bulmaya çalış-->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.jspx</welcome-file>
+    </welcome-file-list>
 
   <!-- ======================== Introduction ============================== -->
   <!-- This document defines default values for *all* web applications      -->
@@ -40,10 +73,7 @@
   <!-- They should go in the "/WEB-INF/web.xml" file in your application.   -->
 
 
-  <!-- Set the default request and response character encodings to UTF-8.   -->
-  <!-- Türkçe karakter Sorunu olması-->
-  <request-character-encoding>UTF-8</request-character-encoding>
-  <response-character-encoding>UTF-8</response-character-encoding>
+
 
 
   <!-- ================== Built In Servlet Definitions ==================== -->
@@ -4752,10 +4782,6 @@
   <!-- here, so be sure to include any of the default values that you wish  -->
   <!-- to use within your application.                                      -->
 
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
+
 
 </web-app>

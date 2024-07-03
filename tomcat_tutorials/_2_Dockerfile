@@ -23,7 +23,7 @@ VOLUME /tmp
 # Conf
 COPY ./tomcat/conf/tomcat-users.xml /usr/local/tomcat/conf/
 COPY ./tomcat/conf/web.xml /usr/local/tomcat/conf/
-COPY ./tomcat/server.xml /usr/local/tomcat/conf/
+COPY ./tomcat/conf/server.xml /usr/local/tomcat/conf/
 
 # Context
 COPY ./tomcat/webapps/manager/META-INF/context.xml /usr/local/tomcat/webapps/manager/META-INF/

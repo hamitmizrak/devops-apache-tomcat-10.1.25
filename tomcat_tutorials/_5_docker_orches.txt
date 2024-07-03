@@ -7,22 +7,22 @@ docker-playground KOPYALA : ctrl+insert
 docker-playground YAPIŞTIR: shift+insert 
 
 STEP-1 (GENEL MÜDÜR)
-MANAGER IP (192.168.0.13)
+MANAGER IP (192.168.0.8)
 ###############################################################
 # Genel Müdür 
-docker swarm init --advertise-addr 192.168.0.18
+docker swarm init --advertise-addr 192.168.0.8
 
 # Genel Müdür Yardımcılarını seç
 docker swarm join-token manager
-docker swarm join --token SWMTKN-1-64yt31treqlt6atfu605spvghjofobag7lfs5soo1at2owu9bz-1o4nwdaoh0024z1sb1usgafm2 192.168.0.18:2377
+docker swarm join --token SWMTKN-1-039uvy1ydu95rp15su8wr8qzykycvj27xiqf33inogfrn9tbre-dp4jeszj6ed2bhbcemkmzhie2 192.168.0.8:2377
+
 
 # Worker Yardımcılarını seç
 docker swarm join-token worker
-docker swarm join --token SWMTKN-1-64yt31treqlt6atfu605spvghjofobag7lfs5soo1at2owu9bz-819px6vk99jvgxxozune8qnl0 192.168.0.18:2377
-
+docker swarm join --token SWMTKN-1-039uvy1ydu95rp15su8wr8qzykycvj27xiqf33inogfrn9tbre-ewyn5ea2g0ssl38z2k078uma8 192.168.0.8:2377
 
 STEP-2 
-MANAGER IP (192.168.0.13)
+MANAGER IP (192.168.0.8)
 ###############################################################
 Genel müdür yardımcılara
 docker swarm join --token SWMTKN-1-64yt31treqlt6atfu605spvghjofobag7lfs5soo1at2owu9bz-1o4nwdaoh0024z1sb1usgafm2 192.168.0.18:2377
@@ -33,7 +33,7 @@ docker swarm join --token SWMTKN-1-64yt31treqlt6atfu605spvghjofobag7lfs5soo1at2o
 
 
 STEP-3 
-MANAGER IP (192.168.0.13)
+MANAGER IP (192.168.0.8)
 ###############################################################
 docker node ls 
 docker service create  --name deneme -p 5555:80 --replicas=7 nginx
@@ -43,7 +43,7 @@ docker service ps deneme
 
 
 STEP-4
-MANAGER IP (192.168.0.13)
+MANAGER IP (192.168.0.8)
 ###############################################################
 docker ps 
 docker container rm -f containerID

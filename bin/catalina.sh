@@ -300,6 +300,48 @@ JAVA_OPTS="$JAVA_OPTS --add-opens=java.base/java.util=ALL-UNNAMED"
 JAVA_OPTS="$JAVA_OPTS --add-opens=java.base/java.util.concurrent=ALL-UNNAMED"
 JAVA_OPTS="$JAVA_OPTS --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"
 
+# JVM Bellek Performansı
+export JAVA_OPTS="-Xms1024m -Xmx2g \
+-XX:+UseG1GC \
+-XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=1g \
+"
+#-Xlog:gc*:file=/usr/local/tomcat/logs/gc.log:time,uptime:filecount=10,filesize=100m"
+
+
+# -Xms1024m => JVM'in başlangıçta minumum ayıracağı Heap Bellek miktarıdır.
+# -Xmx2g => JVM'in kullanabileceği maksimum ayıracağı Heap Bellek miktarıdır.
+# -XX:MetaspaceSize=256m => JVM'in başlangıçta ayıracağı Metaspace( Sınıf meta verileri için kullanılan bellek alanıdır)
+# -XX:MaxMetaspaceSize=1g => JVM'in maksimum Metaspace boyutunu belirtir.
+
+# -Xlog:gc*:file=/usr/local/tomcat/logs/gc.log:time,uptime:filecount=10,filesize=100m
+# Garbage Collection: GC, GC ayarlarını optimize ederek JVM performansını artıracaktır.
+# -Xlog:  Bu kısımda Java Uygulamasını çalıştırıken çöp toplayıcısını GC loglarını logs dizinine kaydeder
+# gc: çöp toplama ile ilgili olayların başlangıç, bitiş vs duraklamalarının günlüğüne kaydedilir 
+# file=/usr/local/tomcat/logs/gc.log : Günlük dosyasını nereye konumlandırayım
+# time : Günlük kaydın zaman damgasını belirtilir.
+# uptime: Sunucu çalışmaya başladığından itibaren geçen süredir.
+# filecount=5 : Günlükd dosya sınırını yani 1 günde enfazla 5 adet günlük dosyasını ekleyebilirsiniz.
+# filesize=100m: Her bir günlük dosyasının maksimum 100 megabayt olarak sınırlanır: 5*100= 500MB
+# 
+# -XX:+UseG1GC: Garbarage First Garbarage Collector(G1GC)
+# Büyük heapler için tasarlanmış çöp toplayıcıdır.
+# Hem genç nesil( young generation) hemde yaşlı nesil(old generation) bellek alanlarını yönetir.
+# Java 9 ve sonrasında varsayılan çöp toplayıcısıdır.
+# Büyük bellek alanlarında pauses(duruş süreleri) düşük tutmayı hedefler.
+# 
+# -XX:+UseParallelGC
+# Hem genç nesil( young generation) hemde yaşlı nesil(old generation) bellek alanlarını paralel olarak temizler
+# Paralel GC: GEnellikle Yüksek Performans Gerektiren işlemlerde kullanıyoruz.
+# ÖZellikle CPU değeri yüksekse büyük verim alınır.
+# Çöp toplama sırasında birden fazla iş parçacığını kullarak verimliliğini artırmak
+#
+# -XX:+UseConcMarkSweepGC: Concurrent Mark-Sweep Garbarage Collector (CMS GC)
+# Yaşlı nesil(old generation) bellek alanlarını temizlemek içindir.
+# Concurrent: Eş zamanlı olarak çöp toplamayı sağlar.
+# Karmaşık yapılandırılmalar olabilir.
+
+
+
 # ----- Execute The Requested Command -----------------------------------------
 
 # Bugzilla 37848: only output this if we have a TTY
