@@ -21,6 +21,18 @@ VOLUME /tmp
 
 # Tomcat Configuration Dosyalarını docker containerda kullan.
 COPY ./tomcat/conf/tomcat-users.xml /usr/local/tomcat/conf
+COPY ./tomcat/conf/server.xml /usr/local/tomcat/conf
+COPY ./tomcat/conf/web.xml /usr/local/tomcat/conf
+
+# Context 
+COPY ./tomcat/conf/context.xml /usr/local/tomcat/conf
+COPY ./tomcat/webapps/manager/META-INF/context.xml /usr/local/tomcat/webapps/manager/META-INF
+
+# Catalina
+COPY ./tomcat/bin/catalina.sh /usr/local/tomcat/bin
+
+# Tomcat Wat Added
+COPY ./tomcat/webapps/sample.war /usr/local/tomcat/webapps
 
 
 
@@ -65,8 +77,11 @@ CMD ["catalina.sh", "run"]
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
  CMD wget --quiet --tries=1 --spider http://localhost:1111 exit 1
 
+########################################################################
+########################################################################
+########################################################################
 
- # Dockerfile: Kendi image dosyalarımızı oluşturmak için
+# Dockerfile: Kendi image dosyalarımızı oluşturmak için
 # Dockerfile Çalıştırma
 # docker build -t image_name .
 
@@ -78,4 +93,17 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 
 # docker ps 
 # docker run -d -p 1111:8080 --name tomcat-container my-tomcat-app
+# docker ps
+# docker ps -a
+# docker container ls 
+# docker container ls -a
+# curl localhost:1111
+
+# winpty docker container exec -it my_tomcat2 bash
+# ls -al
+# cd /usr/local/tomcat/bin
+# ./shutdown.sh
+
+# docker container start my_tomcat2
+
 

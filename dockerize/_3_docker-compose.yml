@@ -13,31 +13,92 @@
 # restart: always => Konteynar her zaman otomatik başlasın
 # restart: on-failure => konteryanar çökmesi halinde otomatik başlasın
 
+####################################################################
+
+# Version
 version: '3.8'
 
+# Services
 services:
+  # Tomcat
   apache_tomcat_web:
     container_name: my_tomcat2
     image: my_tomcat2
     restart: on-failure
     #build: ./deneme/
-    build: ./
+    #build: ./
+    build:
+      context: .
+      dockerfile: _2_Dockerfile
     ports:
       - "1111:8080"
     volumes:
       - tomcat-logs:/usr/local/tomcat/logs
       - tomcat-webapps:/usr/local/tomcat/webapps
+      - tomcat-conf:/usr/local/tomcat/conf
+      - ./tomcat/conf/tomcat-users.xml:/usr/local/tomcat/conf/users-users.xml
+      - ./tomcat/conf/server.xml:/usr/local/tomcat/conf/server.xml
+      - ./tomcat/conf/web.xml:/usr/local/tomcat/conf/web.xml
+      - ./tomcat/conf/context.xml:/usr/local/tomcat/conf/context.xml
+      - ./tomcat/webapps/manager/META-INF/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
+      - ./tomcat/bin/catalina.sh:/usr/local/tomcat/bin/catalina.sh
+    networks:
+      - tomcatnetwork
 
+  # Grafana
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - 2222:3000
+    networks:
+      - tomcatnetwork
+
+  # Prometheus
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - 3333:9090
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - tomcatnetwork
+
+    # JMX
+  jmx-exporter:
+    image: sscaling/jmx-prometheus-exporter
+    ports:
+      - "4444:9072"
+    environment:
+      SERVICE_PORT: 9072
+    volumes:
+      - ./config.yml:/opt/jmx_exporter/config.yml
+    networks:
+      - tomcatnetwork    
+
+# Volume
 volumes:
   tomcat-logs:
     driver: local
   tomcat-webapps:
     driver: local
+  tomcat-conf:
+    driver: local
+
+# Network
+networks:
+  tomcatnetwork:
+    name: tomcatnetwork
+    driver: bridge    
+
+########################################################################
+########################################################################
+########################################################################
 
 # local driver'ı, volume'u host makinenizin dosya sistemi üzerinde depolar. 
 # Bu, verilerinizi kalıcı hale getirmenin ve container'lar arasında paylaşmanın en yaygın ve basit yoludur. 
 # Docker volume'larını kullanarak, container'lar arasında veri paylaşabilir ve container silindiğinde bile verilerinizi koruyabilirsiniz.
 
+# ./deployment.sh
 # docker ps
 # winpty docker container  exec -it  my_tomcat2 bash
 # cd usr/local/tomcat/logs
@@ -52,9 +113,8 @@ volumes:
 
 # docker-compose down
 # docker volume rm  tomcat-logs
-
-
 # docker volume ls 
+
 # docker volume inspect tomcat-logs
 # docker volume inspect tomcat-webapps
 

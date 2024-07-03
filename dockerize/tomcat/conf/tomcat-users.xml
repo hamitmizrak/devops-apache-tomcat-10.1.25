@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+              version="1.0">
+
+
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<role rolename="admin-gui"/>
+
+<!-- Rol Tanımla-->
+<!-- 
+Apache Tomcat üzerinde çeşitli yönetimsel görevler için kullanılan bu rollerin her biri farklı yetkilere sahiptir. İşte her birinin ayrıntılı açıklamaları:
+
+1. **manager-gui**:
+   - **Açıklama**: Bu rol, Tomcat Manager web uygulamasına GUI (Grafik Kullanıcı Arayüzü) üzerinden erişimi sağlar.
+   - **Yetenekler**:
+     - Web arayüzünü kullanarak uygulamaların dağıtımını yapabilir, durdurabilir, yeniden başlatabilir ve kaldırabilir.
+     - Sunucu durumunu ve yüklü uygulamaların durumunu görebilir.
+     - Yedekleme ve geri yükleme işlemlerini yapabilir.
+   - **Kullanım Durumları**: Geliştiriciler ve sistem yöneticileri, uygulama yönetimi ve sunucu izlemesi yapmak için bu rolü kullanır.
+
+2. **manager-script**:
+   - **Açıklama**: Bu rol, Tomcat Manager uygulamasına komut satırı araçları ve betikler aracılığıyla erişimi sağlar.
+   - **Yetenekler**:
+     - Komut satırı veya betiklerle uygulamaların dağıtımını yapabilir, durdurabilir, yeniden başlatabilir ve kaldırabilir.
+     - Otomatikleştirilmiş dağıtım ve bakım betikleri yazmak için kullanılır.
+   - **Kullanım Durumları**: DevOps mühendisleri ve sistem yöneticileri, dağıtım işlemlerini otomatikleştirmek için bu rolü kullanır.
+
+3. **manager-jmx**:
+   - **Açıklama**: Bu rol, JMX (Java Management Extensions) aracılığıyla Tomcat'in yönetim ve izleme işlemlerine erişimi sağlar.
+   - **Yetenekler**:
+     - JMX aracılığıyla Tomcat sunucusunun yönetimini ve izlenmesini gerçekleştirir.
+     - JMX MBean'leri kullanarak sunucu performansını izleyebilir ve yönetim görevlerini gerçekleştirebilir.
+   - **Kullanım Durumları**: Sistem yöneticileri ve yazılım mühendisleri, daha gelişmiş izleme ve yönetim ihtiyaçları için bu rolü kullanır.
+
+4. **manager-status**:
+   - **Açıklama**: Bu rol, Tomcat Manager uygulaması üzerinden yalnızca sunucu durumunu görüntüleme yetkisi verir.
+   - **Yetenekler**:
+     - Sunucunun durumu ve yüklü uygulamalar hakkında bilgi alabilir.
+     - Performans ölçümlerini ve sunucu yükünü izleyebilir.
+   - **Kullanım Durumları**: İzleme ve raporlama ihtiyaçları olan kullanıcılar ve yöneticiler, sunucunun performansını ve durumunu kontrol etmek için bu rolü kullanır.
+
+5. **admin-gui**:
+   - **Açıklama**: Bu rol, Tomcat'in yönetimsel GUI (Grafik Kullanıcı Arayüzü) araçlarına tam erişim sağlar.
+   - **Yetenekler**:
+     - Tomcat sunucusunun tüm yönetimsel işlevlerine tam erişim sağlar.
+     - Sunucu ayarlarını yapılandırabilir, bağlantı havuzlarını yönetebilir, güvenlik ayarlarını değiştirebilir ve daha fazlasını yapabilir.
+   - **Kullanım Durumları**: Sistem yöneticileri ve güvenlik yöneticileri, sunucu yapılandırmasını yönetmek ve güvenlik ayarlarını yapmak için bu rolü kullanır.
+
+Bu rollerin her biri belirli yönetimsel görevleri yerine getirmek için farklı yetkilere sahiptir ve doğru kullanıcılar için uygun rollerin atanması, sistem güvenliği ve verimliliği açısından önemlidir.
+-->
+
+<!-- 
+admin-gui:
+-Tüm bileşenlere erişim sağlar, geniş yönetim yetkisi vardır
+-Sistem yöneticisi sunuc yönetimi ve yapılandırma
+
+
+manager-gui:
+-sadece web uygulamlarına yöneliktir
+-Uygulama geliştirici ve dağıtım yöneticileri tarafından yetkisi vardır.
+-->
+
+<!-- Kullanıcı Tanımla ve Rol Atama -->
+<user username="admin" password="admin" roles="admin-gui,manager-gui,manager-script,manager-jmx,manager-status"/>
+<user username="admin1" password="admin1" roles="manager-gui,manager-script,manager-jmx,manager-status"/>
+</tomcat-users>

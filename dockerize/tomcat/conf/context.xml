@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Tüm Tomcat sunucusu için gerekli olan context yapılandırılmasıdır
+-->
+<Context>
+
+    <!-- Default set of monitored resources. If one of these changes, the    -->
+    <!-- web application will be reloaded.                                   -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+    <!-- Uncomment this to enable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="SESSIONS.ser" />
+    -->
+
+    <!--
+    Apache Tomcat üzerinden önbellek yapılandırılması için performansı artırmak için kaynakları verimliliği için
+    Önbellek ayarlaması yapılır
+     -->
+     <Resources cachingAllowed="true" cacheMaxSize="10240" cacheTTL="60000" />
+     <!-- 
+     cachingAllowed="true" => Ön bellek etkin olsun
+     cacheMaxSize="10240" =>  10MB önbelleğin maksimum boyutunu gösterir.  1024KB=1MB
+     cacheTTL="60000" => Önbellkete saklanan verinin yaşam süresi 60 saniyedir 1000ms=1sn
+     
+     -->
+</Context>
